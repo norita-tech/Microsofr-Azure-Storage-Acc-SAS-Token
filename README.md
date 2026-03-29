@@ -29,7 +29,7 @@ Region: West Europe
 Redundancy: LRS
 Purpose: Host static website + private blob data
 
-![Storage Account](screenshots/storageaccount.png)
+![Storage Account](screenshots-storage-account/storageaccount.png)
 
 2. Static Website Hosting
 Enabled static website feature
