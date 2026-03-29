@@ -23,6 +23,35 @@ The solution includes:
 . SAS token for secure, time‑limited access
 . Lifecycle rules for automated blob tiering and deletion
 
+Azure Storage Architecture – Static Website + SAS + Lifecycle Rules
+
++---------------------------------------------------------------+
+|                       Azure Storage Account                   |
+|---------------------------------------------------------------|
+|                                                               |
+|   +-------------------+      +-----------------------------+  |
+|   |   $web Container  |      |   private-data Container    |  |
+|   |-------------------|      |-----------------------------|  |
+|   | - index.html      |      | - Private blobs             |  |
+|   | - Static website  |      | - No anonymous access       |  |
+|   +-------------------+      +-----------------------------+  |
+|                                                               |
+|   Lifecycle Management:                                       |
+|     • Move to Cool tier after 30 days                         |
+|     • Delete after 365 days                                   |
+|                                                               |
++---------------------------------------------------------------+
+
+                 |                               |
+                 | HTTPS                          | SAS Token (Read)
+                 v                               v
+
++------------------------+          +-----------------------------+
+|   User Browser         |          |  Secure Blob Access via     |
+|   (Public Website)     |          |  SAS URL (Time-limited)     |
++------------------------+          +-----------------------------+
+
+
  What I Built
 1. Storage Account Creation
 Region: West Europe
@@ -37,7 +66,7 @@ Enabled static website feature
 Uploaded index.html to $web container
 
 Verified live website via primary endpoint
-![Static Website ](Screenshots-strgacc/static-website-activated.png)
+![Static Website ](Screenshots-strgacc/static-website activated.png)
 ![Website Live](Screenshots-strgacc/website-live.png)
 
 3. Private Blob Container
