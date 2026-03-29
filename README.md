@@ -29,7 +29,7 @@ Region: West Europe
 Redundancy: LRS
 Purpose: Host static website + private blob data
 
-![Storage Account](screenshots-storage-account/storageaccount.png)
+![Storage Account](Screenshots-strgacc/storageaccount.png)
 
 2. Static Website Hosting
 Enabled static website feature
@@ -37,15 +37,15 @@ Enabled static website feature
 Uploaded index.html to $web container
 
 Verified live website via primary endpoint
-![Static Website Activated](screenshots/static-website-activated.png)
-![Website Live](screenshots/website-live.png)
+![Static Website Activated](Screenshots-strgacc/static-website-activated.png)
+![Website Live](Screenshots-strgacc/website-live.png)
 
 3. Private Blob Container
 Created container: private-data
 
 Access level: Private (no anonymous access)
 
-![Private Container](screenshots/private-container.png)
+![Private Container](Screenshots-strgacc/private-container.png)
 
 4. SAS Token Generation
 Configured a read‑only SAS token for secure access to private blobs.
@@ -56,7 +56,7 @@ Resource type: Object
 
 Permission: Read
 
-![SAS Token](screenshots/generate-sastoken.png)
+![SAS Token](Screenshots-strgacc/generate-sastoken.png)
 
 5. Lifecycle Management Rules
 Implemented automated storage optimization:
@@ -65,7 +65,7 @@ Move to Cool tier after 30 days
 
 Delete blobs after 365 days
 
-![Lifecycle Rules](screenshots/lifecycle-rules.png)
+![Lifecycle Rules](Screenshots-strgacc/lifecycle-rules.png)
 
  Validation
 All features were tested and verified:
