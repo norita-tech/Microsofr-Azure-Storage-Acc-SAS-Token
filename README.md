@@ -66,7 +66,7 @@ Enabled static website feature
 Uploaded index.html to $web container
 
 Verified live website via primary endpoint
-![Static Website Activated](Screenshots-strgacc/static-website activated.png)
+![Static Website Activated](Screenshots-strgacc/static-website-activated.png)
 ![Website Live](Screenshots-strgacc/website-live.png)
 
 3. Private Blob Container
