@@ -37,16 +37,15 @@ Enabled static website feature
 Uploaded index.html to $web container
 
 Verified live website via primary endpoint
-
-📸 See /screenshots/static-website-activated.png  
-📸 See /screenshots/website-live.png
+![Static Website Activated](screenshots/static-website-activated.png)
+![Website Live](screenshots/website-live.png)
 
 3. Private Blob Container
 Created container: private-data
 
 Access level: Private (no anonymous access)
 
-📸 See /screenshots/private-container.png
+![Private Container](screenshots/private-container.png)
 
 4. SAS Token Generation
 Configured a read‑only SAS token for secure access to private blobs.
@@ -57,7 +56,7 @@ Resource type: Object
 
 Permission: Read
 
-📸 See /screenshots/generate-sastoken.png
+![SAS Token](screenshots/generate-sastoken.png)
 
 5. Lifecycle Management Rules
 Implemented automated storage optimization:
@@ -66,7 +65,7 @@ Move to Cool tier after 30 days
 
 Delete blobs after 365 days
 
-📸 See /screenshots/lifecycle-rules.png
+![Lifecycle Rules](screenshots/lifecycle-rules.png)
 
  Validation
 All features were tested and verified:
