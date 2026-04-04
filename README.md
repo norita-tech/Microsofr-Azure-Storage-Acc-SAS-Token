@@ -26,32 +26,6 @@ The solution includes:
 Azure Storage Architecture – Static Website + SAS + Lifecycle Rules
 
 ![Architecture Storage](Screenshots-strgacc/architecture-storage.png)
-+---------------------------------------------------------------+
-|                       Azure Storage Account                   |
-|---------------------------------------------------------------|
-|                                                               |
-|   +-------------------+      +-----------------------------+  |
-|   |   $web Container  |      |   private-data Container    |  |
-|   |-------------------|      |-----------------------------|  |
-|   | - index.html      |      | - Private blobs             |  |
-|   | - Static website  |      | - No anonymous access       |  |
-|   +-------------------+      +-----------------------------+  |
-|                                                               |
-|   Lifecycle Management:                                       |
-|     • Move to Cool tier after 30 days                         |
-|     • Delete after 365 days                                   |
-|                                                               |
-+---------------------------------------------------------------+
-
-                 |                               |
-                 | HTTPS                          | SAS Token (Read)
-                 v                               v
-
-+------------------------+          +-----------------------------+
-|   User Browser         |          |  Secure Blob Access via     |
-|   (Public Website)     |          |  SAS URL (Time-limited)     |
-+------------------------+          +-----------------------------+
-
 
  What I Built
 ## 1. Storage Account Creation
