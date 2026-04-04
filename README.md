@@ -25,6 +25,7 @@ The solution includes:
 
 Azure Storage Architecture – Static Website + SAS + Lifecycle Rules
 
+![Architecture Storage](Screenshots-strgacc/architecture-storage.png)
 +---------------------------------------------------------------+
 |                       Azure Storage Account                   |
 |---------------------------------------------------------------|
