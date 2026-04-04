@@ -86,3 +86,7 @@ I will like to expand this project later on the following:
 - Add custom domain + HTTPS
 - Add logging & monitoring
 - Add versioning for blob data
+
+## Author
+Norita
+Cloud Engineer/Cloud Administrator in training | Azure-focused | Based in Switzerland
